@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:textSize = "80sp"
+        android:gravity = "end"
+        android:id = "@+id/display"
+        android:inputType="none"
+        android:hint="@string/num0"
+        android:layout_width="match_parent"
+        android:layout_height = "wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gridLayout1"
+        />
+
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toTopOf="@id/gridLayout2"
+        >
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface= "serif"
+        android:textSize="60sp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="@string/clear"
+        />
+
+    <Button
+        android:id="@+id/del"
+        android:layout_width="92dp"
+        android:layout_height="98dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="@string/del"
+        android:textSize="60sp"
+        android:typeface="serif"
+        />
+
+    <Button
+        android:id="@+id/neg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface = "serif"
+        android:textSize="60sp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="@string/neg"
+        />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="4"
+        android:useDefaultMargins="true"
+        app:layout_constraintStart_toEndOf="@id/gridLayout1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <Button
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/num1"
+            />
+
+        <Button
+            android:id="@+id/num2"
+            android:layout_width="92dp"
+            android:layout_height="98dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/num2"
+            android:textSize="60sp"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/num3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/num3"
+            />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/plus"
+            />
+
+        <Button
+            android:id="@+id/num4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/num4"
+            />
+
+        <Button
+            android:id="@+id/num5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/num5"
+            />
+
+        <Button
+            android:id="@+id/num6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/num6"
+            />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/sub"
+            />
+
+        <Button
+            android:id="@+id/num7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/num7"
+            />
+
+        <Button
+            android:id="@+id/num8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/num8"
+            />
+
+        <Button
+            android:id="@+id/num9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/num9"
+            />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/mul"
+            />
+
+        <Button
+            android:id="@+id/deci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/deci"
+            />
+
+        <Button
+            android:id="@+id/num0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/num0"
+            />
+
+        <Button
+            android:id="@+id/equ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/equ"
+            />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "serif"
+            android:textSize="60sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/div"
+            />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
